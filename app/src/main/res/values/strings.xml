@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">proyecto_final</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+</resources>
