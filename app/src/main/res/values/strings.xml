@@ -10,4 +10,5 @@
     <string name="go_to_register"><![CDATA[Go to register>>>]]></string>
     <string name="go_to_login"><![CDATA[<<<Go to login]]></string>
     <string name="register_button">Register</string>
+    <string name="welcome">Welcome!</string>
 </resources>

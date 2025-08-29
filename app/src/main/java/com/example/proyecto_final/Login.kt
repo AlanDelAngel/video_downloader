@@ -14,6 +14,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isGone
 import androidx.core.view.isInvisible
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -66,8 +67,8 @@ class Login : AppCompatActivity() {
                     }
 
                     auth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(this) { task ->
-                            progress_bar.isInvisible = true
+                        .addOnCompleteListener() { task ->
+                            progress_bar.isGone=true
                             if (task.isSuccessful) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Toast.makeText(this, "Account found", Toast.LENGTH_SHORT).show()

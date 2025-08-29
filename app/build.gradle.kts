@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation("com.google.firebase:firebase-auth-ktx:23.2.1")
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
