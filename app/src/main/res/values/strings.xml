@@ -2,4 +2,12 @@
     <string name="app_name">proyecto_final</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register!</string>
+    <string name="email">email</string>
+    <string name="go_to_register"><![CDATA[Go to register>>>]]></string>
+    <string name="go_to_login"><![CDATA[<<<Go to login]]></string>
+    <string name="register_button">Register</string>
 </resources>
