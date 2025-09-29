@@ -21,10 +21,23 @@
     app:layout_constraintTop_toTopOf="parent"
     tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:src="@drawable/user_img" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kermit"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,10 +88,10 @@
         android:id="@+id/register_page"
         android:text="@string/go_to_register"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:textAlignment="center"
         android:layout_marginTop="30dp"
-        android:textColor="#F7B40000"
+        android:textColor="#F7FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -86,8 +99,5 @@
 
 
 </LinearLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

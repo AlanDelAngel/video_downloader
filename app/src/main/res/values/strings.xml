@@ -7,8 +7,8 @@
     <string name="login">Login</string>
     <string name="register">Register!</string>
     <string name="email">email</string>
-    <string name="go_to_register"><![CDATA[Go to register>>>]]></string>
-    <string name="go_to_login"><![CDATA[<<<Go to login]]></string>
+    <string name="go_to_register"><![CDATA[Go to REGISTER>>>]]></string>
+    <string name="go_to_login"><![CDATA[<<<Go to LOGIN]]></string>
     <string name="register_button">Register</string>
     <string name="welcome">Welcome!</string>
     <string name="video_downloader">Video Downloader</string>
@@ -17,4 +17,5 @@
     <string name="descargar_video">Descargar Video</string>
     <string name="log_out_button">Log Out Button</string>
     <string name="logout">Logout</string>
+    <string name="welcome_back">Welcome Back!</string>
 </resources>
