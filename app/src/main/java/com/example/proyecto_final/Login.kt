@@ -30,6 +30,16 @@ class Login : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
 
     public override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
@@ -62,7 +72,7 @@ class Login : AppCompatActivity() {
                     }
 
                     if (TextUtils.isEmpty(password)) {
-                        Toast.makeText(this, "Enter email", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Enter Password", Toast.LENGTH_SHORT).show()
                         return@setOnClickListener
                     }
 

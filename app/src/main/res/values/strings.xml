@@ -11,4 +11,10 @@
     <string name="go_to_login"><![CDATA[<<<Go to login]]></string>
     <string name="register_button">Register</string>
     <string name="welcome">Welcome!</string>
+    <string name="video_downloader">Video Downloader</string>
+    <string name="main_text">Pega la URL del video que deseas descargar (Copyrighted videos seran dirigidos a la fuente)</string>
+    <string name="video_url">Video URL</string>
+    <string name="descargar_video">Descargar Video</string>
+    <string name="log_out_button">Log Out Button</string>
+    <string name="logout">Logout</string>
 </resources>

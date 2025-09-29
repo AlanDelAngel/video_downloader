@@ -28,15 +28,17 @@ android {
             )
         }
     }
+    // ✅ Required for AGP 8.x toolchain
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
 
@@ -58,6 +60,19 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx:23.2.1")
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
+
+    // ✅ Needed because you use lifecycleScope
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // ✅ YouTube extractor (note the capital E in artifact id)
+    implementation("com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT")
+
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
