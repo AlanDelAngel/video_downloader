@@ -72,6 +72,7 @@ dependencies {
     implementation("com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT")
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.google.android.material:material:1.12.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

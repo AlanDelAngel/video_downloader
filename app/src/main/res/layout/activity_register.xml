@@ -51,20 +51,27 @@
             android:inputType="textEmailAddress"
             android:id="@+id/email_input"
             />
-        <EditText
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:hint="@string/password"
-            android:textColor="@color/white"
-            android:textColorHint="#C5FFFFFF"
-            android:textSize="25sp"
-            android:padding="10dp"
+            app:endIconMode="password_toggle"
             android:background="@drawable/text_box"
-            android:textAlignment="textStart"
-            android:inputType="textPassword"
-            android:id="@+id/password_input"
-            />
+            android:textColorHint="#C5FFFFFF"
+            app:endIconTint="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ProgressBar
             android:id="@+id/progress_bar"
